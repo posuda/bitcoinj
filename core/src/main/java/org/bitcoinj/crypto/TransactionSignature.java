@@ -132,8 +132,8 @@ public class TransactionSignature extends ECKey.ECDSASignature {
             return Transaction.SigHash.NONE;
         else if (mode == Transaction.SigHash.SINGLE.value)
             return Transaction.SigHash.SINGLE;
-        else if (mode == Transaction.SigHash.SIGHASH_SBTC_FORK.value)
-            return Transaction.SigHash.SIGHASH_SBTC_FORK;
+//        else if (mode == Transaction.SigHash.SIGHASH_SBTC_FORK.value)
+//            return Transaction.SigHash.SIGHASH_SBTC_FORK;
         else
             return Transaction.SigHash.ALL;
     }
