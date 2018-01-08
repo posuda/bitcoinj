@@ -479,17 +479,17 @@ public class Transaction extends ChildMessage {
         ALL(0x41),
         NONE(0x42),
         SINGLE(0x43),
-        SIGHASH_SBTC_FORK(0x40),
+//        SIGHASH_SBTC_FORK(0x40),
         ANYONECANPAY(0x80), // Caution: Using this type in isolation is non-standard. Treated similar to ANYONECANPAY_ALL.
         ANYONECANPAY_ALL(0xC1),
         ANYONECANPAY_NONE(0xC2),
         ANYONECANPAY_SINGLE(0xC3),
-        SBTC_FORK_ALL(0x41),
-        SBTC_FORK_NONE(0x42),
-        SBTC_FORK_SINGLE(0x43),
-        SBTC_FORK_ANYONECANPAY_ALL(0xC1),
-        SBTC_FORK_ANYONECANPAY_NONE(0xC2),
-        SBTC_FORK_ANYONECANPAY_SINGLE(0xC3),
+//        SBTC_FORK_ALL(0x41),
+//        SBTC_FORK_NONE(0x42),
+//        SBTC_FORK_SINGLE(0x43),
+//        SBTC_FORK_ANYONECANPAY_ALL(0xC1),
+//        SBTC_FORK_ANYONECANPAY_NONE(0xC2),
+//        SBTC_FORK_ANYONECANPAY_SINGLE(0xC3),
         UNSET(0); // Caution: Using this type in isolation is non-standard. Treated similar to ALL.
 
         public final int value;
