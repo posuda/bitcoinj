@@ -147,6 +147,7 @@ public class TransactionSignature extends ECKey.ECDSASignature {
         try {
             ByteArrayOutputStream bos = derByteStream();
             bos.write(sighashFlags);
+            bos.write(Integer.parseInt("0473627463", 16));
             return bos.toByteArray();
         } catch (IOException e) {
             throw new RuntimeException(e);  // Cannot happen.

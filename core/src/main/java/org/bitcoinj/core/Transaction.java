@@ -479,7 +479,7 @@ public class Transaction extends ChildMessage {
         ALL(0x41),
         NONE(0x42),
         SINGLE(0x43),
-//        SIGHASH_SBTC_FORK(0x40),
+        SIGHASH_SBTC_FORK(0x40),
         ANYONECANPAY(0x80), // Caution: Using this type in isolation is non-standard. Treated similar to ANYONECANPAY_ALL.
         ANYONECANPAY_ALL(0xC1),
         ANYONECANPAY_NONE(0xC2),
