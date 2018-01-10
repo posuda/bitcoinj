@@ -145,11 +145,8 @@ public class TransactionSignature extends ECKey.ECDSASignature {
      */
     public byte[] encodeToBitcoin() {
         try {
-            ByteArrayOutputStream bos = derByteStream();
-            bos.write(sighashFlags);
-            String s = "0473627463";
-            byte[] b = new BigInteger(s, 16).toByteArray();
-            bos.write(b);
+            ByteArrayOutputStream bos = this.derByteStream();
+            bos.write(this.sighashFlags);
             return bos.toByteArray();
         } catch (IOException e) {
             throw new RuntimeException(e);  // Cannot happen.
